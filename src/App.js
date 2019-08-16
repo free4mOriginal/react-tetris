@@ -1,12 +1,11 @@
 import React from 'react';
+import Tetris from './components/Tetris';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>React Tetris</p>
-      </header>
+      <Tetris />
     </div>
   );
 }
