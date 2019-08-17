@@ -11,5 +11,5 @@ export const StyledDisplay = styled.div`
   width: 100%;
   border-radius: 20px;
   color: ${props => (props.gameOver ? 'red' : '#999')};
-  background: rgba(0, 0, 0, 0.5);
+  background: #000;
 `;

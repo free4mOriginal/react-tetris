@@ -12,7 +12,7 @@ import { StyledTetris, StyledTetrisWrapper } from "./styles/StyledTetris";
 const Tetris = ({ type }) => {
   return (
     <StyledTetrisWrapper>
-        <h1 align="center">TETRIS</h1>
+      <h1 align="center">TETRIS</h1>
       <StyledTetris>
         <Stage stage={createStage()} />
         <aside>
@@ -24,6 +24,7 @@ const Tetris = ({ type }) => {
           <StartButton />
         </aside>
       </StyledTetris>
+      <footer>&copy;2019 Zhana Liner | Web Development</footer>
     </StyledTetrisWrapper>
   );
 };
