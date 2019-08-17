@@ -6,6 +6,7 @@ import { createStage, checkCollision } from '../util/gameHelpers';
 import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
+import Instructions from './Instructions';
 
 // Styled Components:
 import { StyledTetris, StyledTetrisWrapper } from "./styles/StyledTetris";
@@ -42,7 +43,6 @@ const Tetris = () => {
     } else {
       // Game over
       if (player.pos.y < 2) {
-        console.log('GAME OVER');
         setGameOver(true);
         setDropTime(null);
       }
@@ -88,6 +88,7 @@ const Tetris = () => {
             </div>
           )}
           <StartButton callback={startGame}/>
+          <Instructions text="PLAY > ARROWS" />
         </aside>
       </StyledTetris>
       <footer>&copy;2019 Zhana Liner | Web Development</footer>

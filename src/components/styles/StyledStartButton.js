@@ -7,7 +7,7 @@ export const StyledStartButton = styled.button`
   min-height: 30px;
   width: 100%;
   border-radius: 20px;
-  border: 4px solid #ccc;
+  border: 4px solid #73a04b;
   color: white;
   background: rgba(0, 142, 9, 0.5);
   font-family: 'Orbitron', sans-serif;
