@@ -12,6 +12,7 @@ import { StyledTetris, StyledTetrisWrapper } from "./styles/StyledTetris";
 const Tetris = ({ type }) => {
   return (
     <StyledTetrisWrapper>
+        <h1 align="center">TETRIS</h1>
       <StyledTetris>
         <Stage stage={createStage()} />
         <aside>
