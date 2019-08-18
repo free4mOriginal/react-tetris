@@ -44,10 +44,10 @@ const Tetris = () => {
 
   const drop = () => {
     // Increase level when user has cleared 10 rows
-    if (rows > (level + 1) * 10) {
+    if (rows > (level + 1) * 2) {
       setLevel(prev => prev + 1);
       // Also increase the speed
-      setDropTime(1000 / (level + 1) + 500);
+      setDropTime(1000 / (level + 1) + 50);
     }
 
     if (!checkCollision(player, stage, { x: 0, y: 1 })) {
@@ -65,7 +65,7 @@ const Tetris = () => {
   const keyUp = ({ keyCode }) => {
     if (!gameOver) {
       if (keyCode === 40) {
-        setDropTime(1000 / (level + 1) + 200);
+        setDropTime(1000 / (level + 1) + 50);
       }
     }
   };
